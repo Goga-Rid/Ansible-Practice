@@ -4,3 +4,4 @@
   become: yes
   roles:
     - user_creation
+    - git_installation

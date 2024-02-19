@@ -4,3 +4,5 @@
     name: ansible-worker
     state: present
     shell: /bin/bash
+  tags:
+    - user_creation

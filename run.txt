@@ -1,1 +1,3 @@
-ansible-playbook playbook.yml -i hosts.ini -u iphilka
+ansible-playbook playbook.yml -i hosts.ini --tags user_creation
+
+ansible-playbook playbook.yml -i hosts.ini --tags git_installation
