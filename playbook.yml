@@ -1,7 +1,8 @@
 ---
 - name: Configure server
-  hosts: all
+  hosts: test
   become: yes
   roles:
     - user_creation
     - git_installation
+    - git_clone
