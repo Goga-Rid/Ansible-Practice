@@ -8,7 +8,7 @@
 - name: Copy index.html file
   ansible.builtin.copy:
     src: "./roles/nginx_editing/templates/index.html"
-    dest: "/home/ansible-worker/www/index.html"
+    dest: "/home/ansible-worker/www/stud-template/index.html"
     mode: '0644'
   tags: nginx_editing
 
