@@ -12,6 +12,15 @@
     mode: '0644'
   tags: nginx_editing
 
+- name: Set permissions for www-data group
+  ansible.builtin.file:
+    path: "/home/ansible-worker/www"
+    owner: www-data
+    group: ansible-worker
+    mode: "0755"
+    recurse: yes
+  tags: nginx_editing
+
 - name: Create Nginx configuration file
   ansible.builtin.template:
     src: "./roles/nginx_editing/templates/ansible.iphilka.ru.conf"
